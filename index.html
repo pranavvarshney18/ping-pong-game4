@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<script src="https://kit.fontawesome.com/608e013bb3.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" type="text/css" href="ppg_style.css">
+</head>
+<body>
+
+	<div id="current-score">0</div>
+	<button id="button">Start / Level Up</button>
+	<div id ="player-credentials">
+		<div><h1>HIGH SCORE</h1></div>
+		<div>name: <span id="name"></span></div>
+		<div>score: <span id="high-score">0</span></div>
+	</div>
+	<div id="ball"></div>
+
+	<!-- left right button icons  -->
+	<!-- <button id="left-button-icon">left</button> -->
+	<div id="button-icon-container">
+		<i class="fa-solid fa-circle-left" id="left-button-icon"></i>
+		<i class="fa-solid fa-circle-right" id="right-button-icon"></i>
+	</div>
+	<!-- <button id="right-button-icon">right</button> -->
+
+	<div id="bar1" class="bar"></div>
+	<div id="bar2" class="bar"></div>
+
+
+
+
+	<div id="high-score-input">
+		<input id="name-for-input" placeholder="HIGH SCORE !!!!! Please Enter Your Name !"type="text">
+		<br>
+		<button id="name-button">Submit Name</button>
+	</div>
+
+
+
+	<script type="text/javascript" src="ppg_script.js"></script>
+</body>
+</html>

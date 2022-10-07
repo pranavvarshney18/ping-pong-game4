@@ -1,0 +1,125 @@
+body{
+    padding:0px;
+    margin:0px;
+}
+span{
+    display: inline-block;
+}
+#ball{
+    background-color:rgb(196, 53, 53);
+    width:50px;
+    height:50px;
+    border-radius: 50%;
+    position:absolute;
+    top:50%;
+    left:50%;
+    z-index:2;
+}
+#current-score{
+    color:lightslategray;
+    font-size:50px;
+    font-weight: 800;
+    margin-left:20px;
+    margin-top:200px;
+}
+/* .currentScore{
+    color:lightslategray;
+    font: 20px;
+} */
+#button{
+    padding:5px;
+    width:150px;
+    cursor: pointer;
+    vertical-align: middle;
+    /* margin-top:300px; */
+    margin-left:20px;
+}
+#player-credentials{
+    color:lightslategray;
+    margin-left: 20px;
+    /* margin-top:200px; */
+}
+
+.bar{
+    height:20px;
+    width:15%;
+    /* background-color: black; */
+    position:absolute;
+    z-index:1;
+    border-radius: 30px;
+    background: linear-gradient( cyan, purple);
+}
+
+#bar1{
+    left:45%;
+    top:0px;
+    background: linear-gradient(purple, cyan);
+    z-index: 1;
+}
+
+#bar2{
+    bottom:0px;
+    left:45%;
+    background: linear-gradient( cyan, purple);
+    z-index: 1;
+}
+
+#high-score-input{
+    height:0%;
+    width:0%;
+    /* border:1px solid black; */
+    position: absolute;
+    top:25%;
+    left:25%;
+    z-index:2;
+    background-color: whitesmoke;
+    box-shadow: 0px 0px 20px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size:20px;
+    font-weight: 800;
+    overflow:hidden;
+}
+#name-for-input{
+    width:75%;
+    height:30%;
+    font-size:20px;
+    font-weight: 800;
+}
+#name-button{
+    padding:30px;
+    font-size:20px;
+    font-weight: 800;
+}
+
+
+
+
+
+
+
+/* left icon and right icon button  */
+#left-button-icon{
+    transform: scale(3);
+    margin: 10px;
+    transition: 0.1s all;
+}
+#left-button-icon:hover{
+    color: gray;
+}
+#right-button-icon{
+    transform: scale(3);
+    margin: 10px;
+}
+#button-icon-container{
+    width: 95vw;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    transition: 0.1s all;
+}
+#right-button-icon:hover{
+    color: gray;
+}
