@@ -20,12 +20,20 @@ span{
     font-size:50px;
     font-weight: 800;
     margin-left:20px;
-    margin-top:200px;
+    margin-top:20px;
 }
 /* .currentScore{
     color:lightslategray;
     font: 20px;
 } */
+
+/* #info-container{
+    display: inline;
+    position: absolute;
+    border: 1px solid black;
+    
+} */
+
 #button{
     padding:5px;
     width:150px;
@@ -102,24 +110,28 @@ span{
 
 /* left icon and right icon button  */
 #left-button-icon{
-    transform: scale(3);
+    transform: scale(5);
     margin: 10px;
     transition: 0.1s all;
 }
-#left-button-icon:hover{
+/* #left-button-icon:hover{
     color: gray;
-}
+} */
 #right-button-icon{
-    transform: scale(3);
+    transform: scale(5);
     margin: 10px;
 }
 #button-icon-container{
-    width: 95vw;
+    position: absolute;
+    top: 50vh;
+    left: 5vw;
+    /* transform: translate(0, 10vh); */
+    width: 90vw;
     margin: auto;
     display: flex;
     justify-content: space-between;
     transition: 0.1s all;
 }
-#right-button-icon:hover{
+/* #right-button-icon:hover{
     color: gray;
-}
+} */
