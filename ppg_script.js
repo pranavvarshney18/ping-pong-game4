@@ -133,22 +133,28 @@
 
     //left right button icons
     let leftButtonIcon = document.getElementById("left-button-icon");
+    // leftButtonIcon.addEventListener("touchstart", function(){
+    //     barX -= (barChange + level*2);
+    //     if(bar1.getBoundingClientRect().left < 0){
+    //         barX += (barChange + level*2);
+    //     }
+    //     bar1.style.transform = "translate("+ barX + "px, 0px)";
+    //     bar2.style.transform = "translate("+ barX + "px, 0px)";
+    // })
     let leftActivate = false;
     let idLeft;
-    // leftButtonIcon.addEventListener("mousedown", function(){
-    //     leftActivate = true;
-    //     idLeft = setInterval(moveLeftByLeftButton, 30);
-    // });
-    leftButtonIcon.addEventListener("mouseover", function(){
+    leftButtonIcon.addEventListener("touchstart", function(){
         leftActivate = true;
+        leftButtonIcon.style.color = "gray";
         idLeft = setInterval(moveLeftByLeftButton, 30);
     });
-    // leftButtonIcon.addEventListener("mouseup", function(){
-    //     leftActivate = false;
-    // });
-    leftButtonIcon.addEventListener("mouseout", function(){
+    leftButtonIcon.addEventListener("touchend", function(){
+        leftButtonIcon.style.color = "black";
         leftActivate = false;
     });
+    // leftButtonIcon.addEventListener("mouseout", function(){
+    //     leftActivate = false;
+    // });
 
     function moveLeftByLeftButton(){
         barX -= (barChange + level*2);
@@ -165,19 +171,25 @@
     
     let idRight;
     let rightButtonIcon = document.getElementById("right-button-icon");
+    // rightButtonIcon.addEventListener("touchstart", function(){
+    //     barX += (barChange + level*2);
+    //     if(bar1.getBoundingClientRect().right >= window.innerWidth - 10 - level*2){
+    //         barX -= (barChange + level*2);
+    //     }
+    //     bar1.style.transform = "translate("+ barX + "px, 0px)";
+    //     bar2.style.transform = "translate("+ barX + "px, 0px)";
+    // })
     let rightActivate = false;
-    // rightButtonIcon.addEventListener("mousedown", function(){
-    //     rightActivate = true;
-    //     idRight = setInterval(moveRightByRightButton, 30);
-    // });
-    rightButtonIcon.addEventListener("mouseover", function(){
+    rightButtonIcon.addEventListener("touchstart", function(){
         rightActivate = true;
+        rightButtonIcon.style.color = "gray";
         idRight = setInterval(moveRightByRightButton, 30);
     });
     // rightButtonIcon.addEventListener("mouseup", function(){
     //     rightActivate = false;
     // });
-    rightButtonIcon.addEventListener("mouseout", function(){
+    rightButtonIcon.addEventListener("touchend", function(){
+        rightButtonIcon.style.color = "black";
         rightActivate = false;
     });
 
