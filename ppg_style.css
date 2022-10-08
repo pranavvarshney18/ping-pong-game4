@@ -51,7 +51,7 @@ span{
 .bar{
     height:20px;
     width:15%;
-    min-width: 100px;
+    min-width: 200px;
     /* background-color: black; */
     position:absolute;
     z-index:1;
